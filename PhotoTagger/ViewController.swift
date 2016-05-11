@@ -198,6 +198,7 @@ extension ViewController {
     }
   }
   
+  //download colors
   func downloadColors(contentID: String, completion: ([PhotoColor]) -> Void) {
     Alamofire.request(ImaggaRouter.Colors(contentID))
       .responseJSON { response in
